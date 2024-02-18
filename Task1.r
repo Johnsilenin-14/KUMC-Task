@@ -54,5 +54,5 @@ final_data=final_data[,c(1,3,2)]
 ##Saving entrezid replaced gmt file
 write.table(final_data, file = "entrez_replaced.gmt",sep = "\t", quote = FALSE, row.names = FALSE, col.names = FALSE)
 ##checking##
-new<-GSA.read.gmt("entrez_renamed.gmt")
+new<-GSA.read.gmt("entrez_replaced.gmt")
 print(head(new))
